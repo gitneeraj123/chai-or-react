@@ -6,8 +6,8 @@ import './App.css'
 function App() {
   const [color, setColor] = useState("olive")
   return (
-    <div className='h-screen w-full duration-200' style={{backgroundColor:color}}>
-       <div className='flex flex-wrap gap-1 justify-between bg-white rounded-3xl p-3'>
+    <div className='min-h-screen w-full duration-200 justify-center' style={{backgroundColor:color}}>
+       <div className='flex flex-wrap gap-1 justify-center bg-white rounded-3xl p-3'>
         <button onClick={()=>setColor("red")} className='bg-red-800 rounded-2xl text-white p-1 hover:'>Red</button>
         <button onClick={()=>setColor("green")} className='bg-green-800 rounded-2xl text-white p-1'>Green</button>
         <button onClick={()=>setColor("blue")} className='bg-blue-800 rounded-2xl text-white p-1'>Blue</button>
