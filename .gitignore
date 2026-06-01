@@ -1,0 +1,7 @@
+todo-app/
+
+build/
+
+.DS_Store
+
+node_modules/

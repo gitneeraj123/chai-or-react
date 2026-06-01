@@ -28,19 +28,19 @@ function App() {
     setPassword(pass)
   },[length,numberAllowed, charAllowed,setPassword])
 
-
   //function to copy the password to clipboard
   let copyPasswordtoClipboard = useCallback(()=>{
       passRef.current.select();
       window.navigator.clipboard.writeText(password)
   },[password])
 
-
   // use of useEffect to call passwordGenerator whenever length, numberAllowed or charAllowed changes
   useEffect(()=>{
     passwordGenerator();
   },[length,numberAllowed, charAllowed,passwordGenerator]) 
-
+  // useEffect(() => {
+  //   setPassword(generatedPassword);
+  // }, [generatedPassword]);
   //return the jsx code for the password generator app
   return (
     <>  

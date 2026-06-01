@@ -10,7 +10,7 @@ function App() {
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const currencyInfo = useCurrencyInfo(from)
+  const currencyInfo = useCurrencyInfo(from) 
 
   const options = Object.keys(currencyInfo)
 
@@ -38,7 +38,6 @@ function App() {
                     onSubmit={(e) => {
                         e.preventDefault();
                         convert()
-                       
                     }}
                 >
                     <div className="w-full mb-1">
