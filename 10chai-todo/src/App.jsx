@@ -45,6 +45,7 @@ function App() {
     // local storage me values string me store hoti he 
     const todos = JSON.parse(localStorage.getItem("todo"));
     if (todos && todos.length > 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setTodos(todos);
     }
   }, []);
